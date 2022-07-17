@@ -12,7 +12,9 @@ use user_lib::{
 pub fn main() -> usize {
     let t1 = get_time() as usize;
     let info = TaskInfo::new();
+    println!("before time");
     get_time();
+    println!("after time");
     sleep(500);
     let t2 = get_time() as usize;
     // 注意本次 task info 调用也计入
